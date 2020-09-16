@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+body
+	{
+		font-size: normal 100%;
+		color: #333;
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility;
+		background-color: white;
+	}
+
+.container {
+	max-width:650px;
+	margin: 0 auto;
+	padding:100px;
+	font-size:1.5em;
+	line-height:1.4em;
+}
+
+	@media screen and (max-width: 760px) {
+		.container {
+			max-width:100%;
+			padding:50px;
+			overflow: hidden;
+			margin: 0 auto;
+			font-size:1.25em;
+			line-height:1.3em;
+		} }
+
+a:link {
+	color:red;
+	text-decoration:none;
+}
+
+a:visited {
+	color:red;
+	text-decoration:none;
+}
+
+a:focus {
+	color:red;
+	text-decoration:none;
+	border-bottom:2px solid red;
+}
+
+a:active {
+	color:red;
+	text-decoration:none;
+	border-bottom:2px solid red;
+}
+
+a:hover { color:red;
+	text-decoration:none;
+	border-bottom:2px
+	solid red;
+}
+
+p {
+	margin:0;
+	padding:12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+	margin:6px;
+	padding:6px
+}
+
+td, th {
+  padding: 6px;
+  border: 0px;
+  text-align: left;
+}
+
+.case-study-emphasized {
+font-style: italic;
+}
+
+.case-study-process {
+	font-weight: bold;
+}
+
+.case-study-more-link {
+}
+
+.case-study-header {
+font-weight: bold;
+}
+
+button.accordion {
+    background-color: #fff;
+    color: #333;
+		cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+		border: none;
+    outline: none;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		margin: 0;
+		color: red;
+}
+
+button.accordion:before {
+    content: '\02795';
+    font-size: 11px;
+    float: left;
+    margin-right: 7px;
+}
+
+button.accordion.active:before {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 45px;
+	font-size: 75%;
+	line-height: 1.2;
+    background-color: white;
+    display: none;
+		max-height: 0
+		overflow: hidden
+}
